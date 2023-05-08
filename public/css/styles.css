@@ -1,0 +1,322 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
+
+/* Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a; */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    color: #666;
+    background-color: #ebebeb;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* font-size: 12px; */
+}
+
+header {
+    color: black;
+    width: 100%;
+}
+
+main {
+    width: 90vw;
+    text-align: start;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    bannerckground-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+} */
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    text-align: start;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+footer {
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logoMercadoLiebre {
+    max-width:150px;
+    height:auto
+}
+
+.logo-container {
+    width: 50%;
+    height:auto
+}
+
+.container-search {
+    width: 50%;
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 15px;
+    height: 24px;
+}
+
+.input-search {
+    padding-left: 5px;
+    width: 80%;
+    border-radius: 15px;
+    border: none;
+    /* border-radius: 5px; */
+}
+
+.text-buy {
+    width: 100%;
+}
+
+.imageProduct{
+    width: 100%; 
+    height:auto
+}
+
+.convert-to-block{
+    display: block;
+}
+
+.convert-to-inline-block{
+    display: inline-block;
+}
+
+.headerContainer {
+    padding: 25px;
+    background-color: #EAC926;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.iconSearch{
+    font-size: 12px;
+    /* margin-top: 2px;
+    padding: 1px; */
+}
+
+.center-content {
+    text-align: center;
+}
+
+.to-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menu {
+    display: none;
+    /* margin-top: 15px; */
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ul-left {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.ul-left li {
+    margin-right: 5px;
+}
+
+.ul-rigth {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+.ul-rigth li {
+    margin-left: 5px;
+}
+
+.burger-menu {
+    text-align: center;
+    width: 100%;
+}
+
+.burguer-format {
+    color: white;
+    background-color: #1259c3;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.fa-custom-format {
+    color: #1259c3;
+    font-size: 2em;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.titulares {
+    font-size: 24px;
+    width: 100%;
+}
+
+.icon-truck {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    left: 90%;
+    top: -30px;
+}
+
+.container-details {
+    width: 100%;
+    padding: 15px;
+    border-top: solid 1px #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.product-detail {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.price {
+    font-size: 18px;
+}
+
+.discount-descrption {
+    font-size: 16px;
+    margin-left: 5px;
+    color: green;
+}
+
+.product-tittle{
+    display: none;
+    width: 100%;
+    margin-top: 10px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: start;
+}
+
+form div {
+    width: 100%;
+    margin: 15px;
+}
+
+
+
+@media (min-width: 361px) {
+    article {
+        width: 45%;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .logo-container {
+        width: 30%;
+    }
+    
+    .container-search {
+        width: 20%;
+    }
+
+    .text-buy {
+        width: 40%;
+    }
+
+    .iconSearch{
+        background-color: #ebebeb;
+        border-radius: 5px;
+        border: solid 2px #666;
+        margin-left: 5px;
+        height: 19px;
+        /* margin-top: 2px;
+        padding: 1px; */
+    }
+
+    .icon-truck {
+        left: 85%;
+    }
+
+    .product-tittle {
+        display: contents;
+    }
+}
+
+
+@media (min-width: 769px) {
+    article {
+        width: 30%;
+    }
+
+    .menu {
+        display: contents;
+        padding-top: 50px;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .icon-truck {
+        left: 85%;
+    }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Liebre</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="headerContainer">
+            <div class="logo-container">
+                <img class="logoMercadoLiebre" src="/images/logo-mercado-liebre.svg" alt="Logo de mercado liebre">
+            </div>
+            <div class="container-search">
+                <input class="input-search" type="search" placeholder="Buscar productos, marcas">
+                <i class="fa-solid fa-magnifying-glass iconSearch"></i>
+            </div>
+            <div class="center-content text-buy">
+                <div class="">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    <p class="convert-to-inline-block">Compra en cuotas y sin tarjeta de credito</p>
+                </div>
+            </div>
+            <div class="menu">
+                <ul class="ul-left">
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Tiendas Oficiales</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+                <ul class="ul-rigth">
+                    <li><a href="#">Crea tu cuenta</a></li>
+                    <li><a href="#">Ingresa</a></li>
+                    <li><a href="#">Mis Compras</a></li>
+                </ul>
+            </div>
+            <div class="burger-menu">
+                <i class="fas fa-bars burguer-format"></i>
+            </div>
+        </div>
+        </div>
+    </header>
+    <main>
+        <form action="/home" method="POST">
+            <div>
+                <label for="nombre"></label>
+                <input type="text" name="nombre" id="nombre" placeholder="nombre">
+            </div>
+            <div>
+                <label for="apellido"></label>
+                <input type="text" name="apellido" id="apellido" placeholder="apellido">
+            </div>
+            <div>
+                <label for="nombreDeUsuario"></label>
+                <input type="text" name="nombreDeUsuario" id="nombreDeUsuario" placeholder="Usuario">
+            </div>
+            <div>
+                <label for="date"><b>Fecha de nacimiento:</b></label> <br>
+                <input type="date" id="date" name="date"
+                    value="2018-07-22"
+                    min="1950-01-01" max="2023-01-01">
+            </div>
+            <div>
+                <label for="domicilio"></label>
+                <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
+            </div>
+            <div>
+                <label for="perfil"> <b>Perfil de usuario</b></label> <br>
+                <select name="perfil" id="perfil">
+                    <option value="Comprar">Comprar</option>
+                    <option value="Vender">Vender</option>
+                </select>
+            </div>
+            <div>
+                <p> <b>Intereses:</b> </p>
+                <input type="checkbox" id="categorias" name="categorias" value="Electro">
+                <label for="categorias">Electro</label><br>
+            </div>
+            <div>
+                <input type="checkbox" id="categorias" name="categorias" value="Moda">
+                <label for="categorias">Moda</label><br>
+            </div>
+            <div>
+                <input type="checkbox" id="categorias" name="categorias" value="Hogar">
+                <label for="categorias">Hogar</label><br>
+            </div>
+            <div>
+                <input type="checkbox" id="categorias" name="categorias" value="Jugueteria">
+                <label for="categorias">Jugueteria</label><br>
+            </div>
+            <div>
+                <input type="checkbox" id="categorias" name="categorias" value="Vida sana">
+                <label for="categorias">Vida sana</label><br>
+            </div>
+            <div>
+                <label for="date"><b>Subir archivo:</b></label> <br>
+                <input type="file"
+                id="avatar" name="avatar"
+                accept="image/png, image/jpeg, image/gif">
+            </div>
+            <div>
+                <label for="pwd"><b>Ingresa una contraseña:</b></label> <br>
+                <input type="password" id="pwd" name="pwd" placeholder="Password">
+            </div>
+            <div>
+                <label for="pwdconfirm"></label>
+                <input type="text" name="pwdconfirm" id="pwdconfirm" placeholder="Confirmar password">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
