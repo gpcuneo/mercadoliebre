@@ -33,19 +33,21 @@
                     <li><a href="#">Ayuda</a></li>
                 </ul>
                 <ul class="ul-rigth">
-                    <li><a href="#">Crea tu cuenta</a></li>
-                    <li><a href="#">Ingresa</a></li>
-                    <li><a href="#">Mis Compras</a></li>
+                    <li><a href="/register">Crea tu cuenta</a><i class="fa-regular fa-address-card"></i></li>
+                    <li><a href="/login">Ingresa</a><i class="fa-sharp fa-solid fa-right-to-bracket"></i></li>
+                    <li><a href="#">Mis Compras</a><i class="fa-solid fa-basket-shopping"></i></li>
                 </ul>
             </div>
             <div class="burger-menu">
                 <i class="fas fa-bars burguer-format"></i>
             </div>
         </div>
+        <div class="banner">
+            <img src="/images/img-home-banner.jpg" alt="">
         </div>
     </header>
     <main>
-        <form action="/home" method="POST">
+        <form action="/home" method="GET">
             <div>
                 <label for="nombre"></label>
                 <input type="text" name="nombre" id="nombre" placeholder="nombre">
@@ -109,6 +111,9 @@
             <div>
                 <label for="pwdconfirm"></label>
                 <input type="text" name="pwdconfirm" id="pwdconfirm" placeholder="Confirmar password">
+            </div>
+            <div>
+                <button type="submit" class="btn-ml">Enviar</button>
             </div>
         </form>
     </main>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Liebre</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="headerContainer">
+            <div class="logo-container">
+                <img class="logoMercadoLiebre" src="/images/logo-mercado-liebre.svg" alt="Logo de mercado liebre">
+            </div>
+            <div class="container-search">
+                <input class="input-search" type="search" placeholder="Buscar productos, marcas">
+                <i class="fa-solid fa-magnifying-glass iconSearch"></i>
+            </div>
+            <div class="center-content text-buy">
+                <div class="">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    <p class="convert-to-inline-block">Compra en cuotas y sin tarjeta de credito</p>
+                </div>
+            </div>
+            <div class="menu">
+                <ul class="ul-left">
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Tiendas Oficiales</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+                <ul class="ul-rigth">
+                    <li><a href="/register">Crea tu cuenta</a><i class="fa-regular fa-address-card"></i></li>
+                    <li><a href="/login">Ingresa</a><i class="fa-sharp fa-solid fa-right-to-bracket"></i></li>
+                    <li><a href="#">Mis Compras</a><i class="fa-solid fa-basket-shopping"></i></li>
+                </ul>
+            </div>
+            <div class="burger-menu">
+                <i class="fas fa-bars burguer-format"></i>
+            </div>
+        </div>
+        <div class="banner">
+            <img src="/images/img-home-banner.jpg" alt="">
+        </div>
+    </header>
+    <main>
+        <div class="container-login">
+            <form action="/home" method="GET" class="container-login">
+                <div>
+                    <label for="nombreDeUsuario"></label>
+                    <input type="text" name="nombreDeUsuario" id="nombreDeUsuario" placeholder="Nombre de usuario" class="input-format">
+                </div>
+                <div>
+                    <label for="pwd"></label>
+                    <input type="password" id="pwd" name="pwd" placeholder="Contraseña" class="input-format">
+                </div>
+                <div>
+                    <button class="btn-ml" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

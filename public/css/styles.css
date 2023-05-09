@@ -15,6 +15,7 @@ Verde: #39b54a; */
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: roboto;
 }
 
 body {
@@ -69,9 +70,21 @@ article {
     background-color: white;
 }
 
+article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
 ul {
     list-style-type: none;
     padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ul li {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 footer {
@@ -79,6 +92,10 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+ul li i {
+    margin-left: 5px;
 }
 
 .logoMercadoLiebre {
@@ -109,6 +126,7 @@ footer {
 
 .text-buy {
     width: 100%;
+    font-size: 14px;
 }
 
 .imageProduct{
@@ -158,17 +176,19 @@ footer {
 }
 
 .ul-left {
+    margin-top: 15px;
     width: 50%;
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
 }
 
-.ul-left li {
+/* .ul-left li {
     margin-right: 5px;
-}
+} */
 
 .ul-rigth {
+    margin-top: 15px;
     width: 50%;
     display: flex;
     flex-wrap: wrap;
@@ -182,6 +202,7 @@ footer {
 .burger-menu {
     text-align: center;
     width: 100%;
+    margin-top: 15px;
 }
 
 .burguer-format {
@@ -194,6 +215,7 @@ footer {
 .fa-custom-format {
     color: #1259c3;
     font-size: 2em;
+    width: 100%;
 }
 
 .banner img{
@@ -203,10 +225,13 @@ footer {
 .titulares {
     font-size: 24px;
     width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .icon-truck {
     display: block;
+    color: green;
     font-size: 16px;
     padding: 5px;
     width: 30px;
@@ -217,6 +242,11 @@ footer {
     position: relative;
     left: 90%;
     top: -30px;
+    transition: 1s;
+}
+
+.icon-truck:hover{
+    transform: rotateZ(-90deg);
 }
 
 .container-details {
@@ -251,6 +281,16 @@ footer {
     margin-top: 10px;
 }
 
+.container-login {
+    text-align: center;
+    justify-content: center;
+}
+
+.cards {
+    width: 100%;
+    margin-top: 25px;
+}
+
 form {
     display: flex;
     flex-wrap: wrap;
@@ -262,6 +302,24 @@ form div {
     margin: 15px;
 }
 
+.btn-ml {
+    background-color: #39b54a;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    border: none;
+}
+
+.btn-ml:hover {
+    background-color: #0022AA;
+}
+
+.input-format {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
 
 
 @media (min-width: 361px) {
@@ -274,22 +332,10 @@ form div {
         width: 30%;
     }
     
-    .container-search {
-        width: 20%;
-    }
+    
 
-    .text-buy {
-        width: 40%;
-    }
-
-    .iconSearch{
-        background-color: #ebebeb;
-        border-radius: 5px;
-        border: solid 2px #666;
-        margin-left: 5px;
-        height: 19px;
-        /* margin-top: 2px;
-        padding: 1px; */
+    .cards { 
+        width: 30%;
     }
 
     .icon-truck {
@@ -304,7 +350,7 @@ form div {
 
 @media (min-width: 769px) {
     article {
-        width: 30%;
+        width: 20%;
     }
 
     .menu {
@@ -319,4 +365,14 @@ form div {
     .icon-truck {
         left: 85%;
     }
+
+    .container-search {
+        width: 20%;
+    }
+
+    .text-buy {
+        width: 40%;
+    }
+
+    
 }
