@@ -127,6 +127,9 @@ ul li i {
 .text-buy {
     width: 100%;
     font-size: 14px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .imageProduct{
@@ -147,8 +150,8 @@ ul li i {
     background-color: #EAC926;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between
+    /* align-items: center; */
 }
 
 .iconSearch{
@@ -159,6 +162,10 @@ ul li i {
 
 .center-content {
     text-align: center;
+}
+
+.center-right {
+    text-align: end;
 }
 
 .to-flex {
@@ -322,6 +329,17 @@ form div {
 }
 
 
+footer i {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+footer i:hover{
+    color: #03264C;
+}
+
 @media (min-width: 361px) {
     article {
         width: 45%;
@@ -334,9 +352,9 @@ form div {
     
     
 
-    .cards { 
+    /* .cards { 
         width: 30%;
-    }
+    } */
 
     .icon-truck {
         left: 85%;
@@ -351,6 +369,10 @@ form div {
 @media (min-width: 769px) {
     article {
         width: 20%;
+    }
+
+    .cards { 
+        width: 30%;
     }
 
     .menu {
@@ -372,6 +394,9 @@ form div {
 
     .text-buy {
         width: 40%;
+        text-align: end;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 
     
